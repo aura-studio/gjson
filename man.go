@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-	jsonStr := flag.String("json", "", "要解析的JSON字符串")
-	path := flag.String("path", "", "gjson路径表达式")
+	jsonStr := flag.String("json", "s", "要解析的JSON字符串")
+	path := flag.String("path", "g", "gjson路径表达式")
 	flag.Parse()
 
 	if *jsonStr == "" || *path == "" {
